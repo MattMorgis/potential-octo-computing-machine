@@ -1,0 +1,117 @@
+Unix Shell High-level plan
+Matt Morgis
+CIS 3207 - Temple University
+
+Main function.
+This will ask for the input from the user and call the correct method once it is entered.
+ int main():
+   int IS_FORKING = 0;
+    while (True):
+      printf("MyShell> ");
+      char* input; 
+      char* argv; 
+      fgets(input, MAX_SIZE, stdin); 
+      switch (input):
+        case ("exit"):
+          return 0; //success
+        case ("0x004"): /
+          return 0; //success
+        default:
+          if (last char of input is "&")
+            IS_FORKING = 1;
+            readLine(input, IS_FORKING);
+
+
+Readline is called when a normal input ending in & is entered.
+void readLine(char* input, int IS_FORKING):
+  char in = "<";
+  char out = ">";
+  char pipe = "|";
+  if ((strstr(input, &in)) != NULL):
+    char[] splitArgs = split(input, in);
+    int newstdin = open(splitArgs[1], O_RDONLY);
+    close(0);
+    dup(newstdin);
+    close(newstdin);
+    char ** rgv = build_argv(splitArgs[0]);
+    if (!IS_FORKING)
+      execvp(argv[0], argv);
+    else
+      if (fork() == 0)
+        execvp(argv[0], argv);
+      else
+        int status = 0;
+        wait(&status);
+  else if ((strstr(input, &out)) != NULL):
+    char[] splitArgs = split(input, out);
+    int newstdout = open(inptr, O_WRONLY|O_CREAT,S_IRWXU|S_IRWXG|S_IRWXO);
+    close(1);
+    dup(newstdout);
+    close(newstdout);
+    char ** argv = build_argv(splitArgs[0]);
+    if not IS_FORKING:
+      execvp(argv[0], argv);
+    else
+      if (fork() == 0)
+        execvp(argv[0], argv);
+      else
+        int status = 0;
+        wait(&status);
+  else if ((strstr(input, &pipe) != NULL)
+    char[] splitArgs = split(input, pipe);
+    char** left = build_argv(splitArgs[0]);
+    char** right = build_argv(splitArgs[1]);
+    int = thePipe[2];
+    pipe(thePipe);
+    int pid;
+    pid = fork();
+    if (pid > 0):
+      close(1);
+      dup(thePipe[1]);
+      execvp(left[0], left);
+    else if (pid == 0):
+      close(0);
+      dup(thePipe[0]);
+      execvp(right[0], right);
+    else:
+      exit(1);
+
+Builds the double point array.      
+char** build_argv(char* input):
+  int index = 0;
+  char **argv = (char**) malloc(sizeof(char*));
+  char * copy = (char*) malloc(sizeof(char)*strlen(input)));
+  strncpy(copy, input, strlen(input));
+  char* token = strtok(copy, " ");
+  while (token != NULL):
+    argv[index] = (char*) malloc(sizeof(char)*strlen(token)+1));
+    strncpy(args[index], token, strlen(token)+1);
+    index++;
+    token = strtok(NULL, " ");
+    argv = (char**) realloc(argv, sizeof(char*) * (index+1));
+  argv[index] = NULL;
+  return argv;
+
+
+char[] split(char* input, char delim):
+  char **result to NULL;
+  size_t size;
+  unsigned int index, i;
+  char *ptr, *pstr;
+  ptr = NULL;
+  pstr = ptr;
+  while (pstr):
+    ptr = strstr(pstr, delim);
+    result = realloc(result, (index+1) * sizeof(char *));
+    size = strlen(pstr) - ((ptr)strlen(ptr):0);
+    result[index] = malloc(size * sizeof(char));
+    strncpy(result[index], pstr, size);
+    index++;
+    if (ptr != NULL)
+      increment pstr by ptr+2;
+    else:
+      pstr = NULL;
+
+  return result;
+
+ 

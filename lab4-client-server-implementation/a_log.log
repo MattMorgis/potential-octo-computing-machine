@@ -1,0 +1,132 @@
+a's 1th cycle.
+10000 a requests 3 resources.
+a is waiting for message from sever.
+a gets message from server.
+60000 a read message from server 0000007890
+a's resources 0000007890td^D
+Random delay of a
+Random delay of a ends.
+70000 a returns resource 7
+70000 a returns resource 8
+70000 a returns resource 9
+Fixed delay of a
+Fixed delay of a ends.
+a's 2th cycle.
+80000 a requests 2 resources.
+a is waiting for message from sever.
+a gets message from server.
+110000 a read message from server 1200000000
+a's resources 1200000000td^D
+Random delay of a
+Random delay of a ends.
+120000 a returns resource 1
+120000 a returns resource 2
+Fixed delay of a
+Fixed delay of a ends.
+a's 3th cycle.
+130000 a requests 3 resources.
+a is waiting for message from sever.
+a gets message from server.
+140000 a read message from server 1200007000
+a's resources 1200007000td^D
+Random delay of a
+Random delay of a ends.
+Random delay of a
+Random delay of a ends.
+150000 a returns resource 1
+150000 a returns resource 2
+150000 a returns resource 7
+Fixed delay of a
+Fixed delay of a ends.
+a's 4th cycle.
+160000 a requests 2 resources.
+a is waiting for message from sever.
+a gets message from server.
+190000 a read message from server 1200000000
+a's resources 1200000000td^D
+Random delay of a
+Random delay of a ends.
+200000 a returns resource 1
+200000 a returns resource 2
+Fixed delay of a
+Fixed delay of a ends.
+a's 5th cycle.
+210000 a requests 3 resources.
+a is waiting for message from sever.
+a gets message from server.
+220000 a read message from server 120000000:
+a's resources 120000000:td^D
+Random delay of a
+Random delay of a ends.
+230000 a returns resource 1
+230000 a returns resource 2
+230000 a returns resource :
+Fixed delay of a
+Fixed delay of a ends.
+a's 6th cycle.
+Random delay of a
+Random delay of a ends.
+150000 a returns resource 1
+150000 a returns resource 2
+150000 a returns resource 7
+Fixed delay of a
+Fixed delay of a ends.
+a's 4th cycle.
+160000 a requests 2 resources.
+a is waiting for message from sever.
+a gets message from server.
+190000 a read message from server 1200000000
+a's resources 1200000000td^D
+Random delay of a
+Random delay of a ends.
+200000 a returns resource 1
+200000 a returns resource 2
+Fixed delay of a
+Fixed delay of a ends.
+a's 5th cycle.
+210000 a requests 3 resources.
+a is waiting for message from sever.
+a gets message from server.
+220000 a read message from server 120000000:
+a's resources 120000000:td^D
+Random delay of a
+Random delay of a ends.
+230000 a returns resource 1
+230000 a returns resource 2
+230000 a returns resource :
+Fixed delay of a
+Fixed delay of a ends.
+a's 6th cycle.
+Fixed delay of a ends.
+a's 6th cycle.
+240000 a requests 2 resources.
+a is waiting for message from sever.
+a gets message from server.
+270000 a read message from server 0000067000
+a's resources 0000067000td^D
+Random delay of a
+Random delay of a ends.
+280000 a returns resource 6
+280000 a returns resource 7
+Fixed delay of a
+Fixed delay of a ends.
+a's 7th cycle.
+290000 a requests 3 resources.
+a is waiting for message from sever.
+a gets message from server.
+300000 a read message from server 0000567000
+a's resources 0000567000td^D
+Random delay of a
+Random delay of a ends.
+320000 a returns resource 5
+320000 a returns resource 6
+320000 a returns resource 7
+Fixed delay of a
+Fixed delay of a ends.
+a's 8th cycle.
+330000 a requests 2 resources.
+a is waiting for message from sever.
+a gets message from server.
+340000 a read message from server 1200000000
+a's resources 1200000000td^D
+Random delay of a

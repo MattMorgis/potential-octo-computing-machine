@@ -1,0 +1,57 @@
+10000 Distributing resource to d 0000000000.
+10000 Send message to d 1234000000
+10000 Distributing resource to c dddd000000.
+10000 Send message to c 0000567800
+30000 Free resource from c 5. Current resource state dddd0ccc00
+30000 Free resource from c 6. Current resource state dddd00cc00
+30000 Free resource from c 7. Current resource state dddd000c00
+30000 Free resource from c 8. Current resource state dddd000000
+30000 Distributing resource to b dddd000000.
+30000 Send message to b 0000567000
+30000 Distributing resource to a ddddbbb000.
+30000 Send message to a 000000089:
+40000 Free resource from d 1. Current resource state 0dddbbbaaa
+40000 Free resource from d 2. Current resource state 00ddbbbaaa
+40000 Free resource from d 3. Current resource state 000dbbbaaa
+40000 Free resource from d 4. Current resource state 0000bbbaaa
+40000 Free resource from b 5. Current resource state 00000bbaaa
+40000 Free resource from b 6. Current resource state 000000baaa
+40000 Free resource from b 7. Current resource state 0000000aaa
+40000 Free resource from b 6. Current resource state 000000baaa
+40000 Free resource from b 7. Current resource state 0000000aaa
+40000 Distributing resource to c 0000000aaa.
+40000 Send message to c 1230000000
+60000 Distributing resource to d ccc0000aaa.
+60000 Send message to d 0004560000
+60000 Free resource from a 8. Current resource state cccddd00aa
+60000 Free resource from a 9. Current resource state cccddd000a
+60000 Free resource from a :. Current resource state cccddd0000
+60000 Distributing resource to b cccddd0000.
+60000 Send message to b 0000007800
+80000 Free resource from d 4. Current resource state ccc0ddbb00
+80000 Free resource from d 5. Current resource state ccc00dbb00
+80000 Free resource from d 6. Current resource state ccc000bb00
+80000 Free resource from c 1. Current resource state 0cc000bb00
+80000 Free resource from c 2. Current resource state 00c000bb00
+80000 Free resource from c 3. Current resource state 000000bb00
+80000 Distributing resource to a 000000bb00.
+80000 Send message to a 1200000000
+80000 Distributing resource to a 000000bb00.
+80000 Send message to a 1200000000
+110000 Distributing resource to d aa0000bb00.
+110000 Send message to d 0034560000
+110000 Free resource from b 7. Current resource state aadddd0b00
+110000 Free resource from b 8. Current resource state aadddd0000
+110000 Distributing resource to b aadddd0000.
+110000 Send message to b 0000007890
+130000 Free resource from a 1. Current resource state 0addddbbb0
+130000 Free resource from a 2. Current resource state 00ddddbbb0
+130000 Distributing resource to a 00ddddbbb0.
+130000 Send message to a 120000000:
+150000 Free resource from d 3. Current resource state aa0dddbbba
+150000 Free resource from d 4. Current resource state aa00ddbbba
+150000 Free resource from d 5. Current resource state aa000dbbba
+150000 Free resource from d 6. Current resource state aa0000bbba
+150000 Free resource from b 7. Current resource state aa00000bba
+150000 Free resource from b 8. Current resource state aa000000ba
+150000 Free resource from b 9. Current resource state aa0000000a

@@ -1,0 +1,155 @@
+
+Ch {
+	Queue* top
+	check(){
+		return top->msg
+	}
+	read(){
+		tmp = top
+		top = top.next
+		top.prec = null
+		return tmp->msg
+	}
+	send(msg){
+		tail.next = &msg
+		msg.prec = tail
+		tail = tail.next
+	}
+}
+
+Queue{
+	Queue* prec
+	Queue* next
+	char* msg
+}
+
+
+boolean flag=[a, b, c, d]
+
+serverProcedure{
+		while(gFlag){
+			if(check()!=null){
+				switch(msg[1]){
+					case 'Q':
+						reply()
+						break
+					case "L":
+						release()
+						break
+					defalt:
+						system error "invalid message format!"
+				}
+			}
+			gFlag = a && b && c && d
+		}
+	}
+
+Server class
+	char[10] resource
+	char stock
+	ch upCh
+	ch[4] downCh
+	
+
+	reply(){
+		if(check()[2]>stock){
+			return
+		}
+		char[3] msg  = read()
+		client id is msg[0]
+		wanted resource number = msg[2]
+		rply = {'0', '0', '0', '0', '0', '0', '0', '0', '0', '0'}
+		for(int i = 0; i<10; i++){
+			if resource i is free
+				annote it as taken by client msg[0]
+				put the resource id into the reply
+				granted resource number + 1
+			if granted resource number == msg[2]
+				break
+			
+		}
+
+		send(msg[0], rply)
+		log("reply distribute resource to ", msg[0], resource)
+	}
+
+	release(){
+		msg = read()
+		resource[msg[2]-'0'] = 0 release the resource
+		log("free resource from ", msg[0], resource)
+	}
+
+	check(){
+		return upCh.check()
+	}
+
+	read(){
+		log("read message", upCh.check())
+		return upCh.read()
+
+	}
+
+	send(chNum, msg){
+		downCh[chNum-'a'].send(msg)
+		log("send message to ", chNum, msg)
+	}
+
+
+
+
+
+	clientProcedure(){
+		count = 0
+		while(gFlag){
+			requestQ(count%2+2)
+			count = count +1
+			while(check()==null);
+			msg = read()
+			i = 0
+			own.copy(msg)
+
+			t = random()
+			sleep(random)
+
+			for(int 1 = 0; i<10; i++){
+				if(own[i]!=0){
+					reqestL(own[i]);
+					own[i]==0
+				}
+			}
+
+			sleep(t2)
+			flag[id] = (count >20)
+			gFlag = a&&b&&c&&d
+		}
+		
+	}
+
+
+
+Client class
+	char id
+	Ch upCh
+	Ch ownCh
+	char[10] own
+	int t2
+
+	requestQ(num){
+		upCh.send({id, 'Q', num+'0'})
+		log(id, "requests ",  num, " resources.")
+	}
+
+	check(){
+		return ownCh->check()
+	}
+
+	read(){
+		log(id, "read message from server", ownCh->check())
+		return ownCh->read()
+
+	}
+
+	requestL(eleNum){
+		upCh.send({id, 'L', eleNum})
+		log(id, "returns resource ", eleNum)
+	}

@@ -1,0 +1,57 @@
+c's 1th cycle.
+0 c requests 4 resources.
+c is waiting for message from sever.
+c gets message from server.
+10000 c read message from server 0000567800
+c's resources 0000567800
+Random delay of c
+Random delay of c ends.
+20000 c returns resource 5
+20000 c returns resource 6
+20000 c returns resource 7
+20000 c returns resource 8
+Fixed delay of c
+Fixed delay of c ends.
+c's 2th cycle.
+40000 c requests 3 resources.
+c is waiting for message from sever.
+c gets message from server.
+60000 c read message from server 1230000000
+c gets message from server.
+60000 c read message from server 1230000000
+c's resources 1230000000
+Random delay of c 
+Random delay of c ends.
+80000 c returns resource 1
+80000 c returns resource 2
+80000 c returns resource 3
+Fixed delay of c
+Fixed delay of c ends.
+c's 3th cycle.
+100000 c requests 4 resources.
+c is waiting for message from sever.
+c gets message from server.
+160000 c read message from server 1234000000
+c's resources 1234000000
+Random delay of c
+Random delay of c ends.
+180000 c returns resource 1
+Random delay of c ends.
+180000 c returns resource 1
+180000 c returns resource 2
+180000 c returns resource 3
+180000 c returns resource 4
+Fixed delay of c
+Fixed delay of c ends.
+c's 4th cycle.
+200000 c requests 3 resources.
+c is waiting for message from sever.
+c gets message from server.
+260000 c read message from server 1230000000
+c's resources 1230000000
+Random delay of c
+Random delay of c ends.
+280000 c returns resource 1
+280000 c returns resource 2
+280000 c returns resource 3
+Fixed delay of c
